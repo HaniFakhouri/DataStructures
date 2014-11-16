@@ -1,4 +1,0 @@
-DataStructures
-==============
-
-Different Datastructures Implementation
