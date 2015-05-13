@@ -34,7 +34,6 @@ public class MergeSort {
 				tmpArray[tmpPos++] = a[leftPos++];
 			else
 				tmpArray[tmpPos++] = a[rightPos++];
-			
 		
 		while ( leftPos <= leftEnd )
 			tmpArray[tmpPos++] = a[leftPos++];
@@ -45,18 +44,25 @@ public class MergeSort {
 		for (int i=0; i<numElements; i++, rightEnd--)
 			a[rightEnd] = tmpArray[rightEnd];
 		
+		printArray(a);
+		
 	}
 	
 	public static void main(String[] args) {
 		
 		//Integer[] a = new Integer[]{1,13,24,26,2,15,27,38,0};
-		Integer[] a = new Integer[]{0,0,2,7,12,0,4,8,13};
+		Integer[] a = new Integer[]{150,13,100,200,0,0,2,7,12,0,4,8,-1};
 		
 		MergeSort.sort(a);
 		
-		for (int i : a)
-			System.out.print(i + " ");
+		printArray(a);
 		
+	}
+	
+	public static <T> void printArray(T[] a) {
+		for (T e : a)
+			System.out.print(e + " ");
+		System.out.println();
 	}
 
 }

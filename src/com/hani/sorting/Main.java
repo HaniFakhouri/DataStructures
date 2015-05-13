@@ -20,7 +20,7 @@ public class Main {
 		int max = 2000000000;
 		int min = 0;
 		System.out.println("Generating random numbers...");
-		for (int i=0; i<10000; i++) {
+		for (int i=0; i<1000000; i++) {
 			set.add(rand.nextInt((max - min) + 1) + min);
 		}
 		System.out.println("Random numbers generated\n");

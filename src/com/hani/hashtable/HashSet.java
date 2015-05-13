@@ -243,7 +243,7 @@ public class HashSet<T> extends AbstractCollection<T> implements Set<T> {
 	
 	private class HashIterator implements Iterator<T> {
 
-		private int expectedModCound = modCount;
+		private int expectedModCount = modCount;
 		private int visited = 0;
 		private int currentPos = -1;
 		
@@ -270,7 +270,7 @@ public class HashSet<T> extends AbstractCollection<T> implements Set<T> {
 			currentSize--;
 			visited--;
 			modCount++;
-			expectedModCound++;
+			expectedModCount++;
 		}
 		
 	}
